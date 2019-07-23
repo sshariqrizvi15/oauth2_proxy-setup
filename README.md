@@ -18,7 +18,7 @@ Move oauth2_proxy.template file of project into /etc/init.d/ by following comman
 
 sudo cp oauth2_proxy.template /etc/init.d/oauth2_proxy
 
-chmod +x /etc/init.d/oauth2_proxy
+sudo chmod +x /etc/init.d/oauth2_proxy
 
 Change values in redirect_url, email_domains, client_id, and, client_secret in /etc/oauth2_proxy.cfg. Then run this command
 
