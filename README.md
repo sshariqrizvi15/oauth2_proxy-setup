@@ -8,7 +8,7 @@ tar xzvf  oauth2_proxy-v3.2.0.linux-amd64.go1.11.tar.gz
 
 sudo mkdir /usr/bin/oauth2_proxy
 
-sudo cp release/oauth2_proxy-linux-amd6 /usr/bin/oauth2_proxy
+sudo cp release/oauth2_proxy-linux-amd64 /usr/bin/oauth2_proxy
 
 Move oauth2_proxy.cfg file of project into /etc/oauth2_proxy.cfg by following command
 
