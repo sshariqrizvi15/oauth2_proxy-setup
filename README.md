@@ -41,14 +41,24 @@ For Google, the registration steps are:
 
 - Move oauth2_proxy.cfg file of project into /etc/oauth2_proxy.cfg by following command
 
-- sudo cp oauth2_proxy.cfg /etc/oauth2_proxy.cfg
+    sudo cp oauth2_proxy.cfg /etc/oauth2_proxy.cfg
 
 - Move oauth2_proxy.template file of project into /etc/init.d/ by following command
 
-- sudo cp oauth2_proxy.template /etc/init.d/oauth2_proxy
+    sudo cp oauth2_proxy.template /etc/init.d/oauth2_proxy
 
 - sudo chmod +x /etc/init.d/oauth2_proxy
 
 - Change values in redirect_url, email_domains, client_id, and, client_secret in /etc/oauth2_proxy.cfg. Then run this command
 
-- sudo service oauth2_proxy start
+    sudo service oauth2_proxy start
+
+## nginx
+
+- sudo yum install nginx
+
+- Replace nginx.conf file of project into cd /etc/nginx/ by following command
+  
+  sudo mv nginx.conf /etc/nginx/nginx.conf
+  
+- sudo nginx
